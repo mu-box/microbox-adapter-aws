@@ -18,7 +18,7 @@ GEM
     rack-protection (1.5.3)
       rack
     rake (12.0.0)
-    redcarpet (3.4.0)
+    redcarpet (3.6.0)
     right_aws_api (0.3.5)
       right_cloud_api_base (>= 0.2.6)
     right_cloud_api_base (0.2.6)
