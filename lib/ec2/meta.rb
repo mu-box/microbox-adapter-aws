@@ -21,7 +21,7 @@ class ::EC2::Meta
           { key: :secret_access_key, label: 'Secret Access Key' }
         ],
         instructions:      instructions,
-        bootstrap_script:  'https://s3.amazonaws.com/tools.nanobox.io/bootstrap/ubuntu.sh',
+        bootstrap_script:  'https://s3.amazonaws.com/tools.microbox.cloud/bootstrap/ubuntu.sh',
         ssh_key_method:    'reference'
       }.to_json
     end

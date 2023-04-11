@@ -37,7 +37,7 @@ class ::EC2::Catalog
       # provide this information via a nice json api: /instances.json
       #
       # The challenge here is that the data from this service is structured
-      # completely opposite to how the nanobox catalog needs to be structured.
+      # completely opposite to how the microbox catalog needs to be structured.
       # So essentially we fetch the data, iterate over the data and construct
       # the data set according to how we need it to be.
       #

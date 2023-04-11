@@ -53,7 +53,7 @@ class ::EC2::Client
   # Order a server to run on AWS
   #
   # attrs:
-  #   name:     Nanobox-generated name
+  #   name:     Microbox-generated name
   #   region:   the region wherein to launch the server
   #   size:     the size of server to provision
   #   ssh_key:  id of the SSH key
@@ -74,7 +74,7 @@ class ::EC2::Client
     # todo: make this round-robin between availability zones
     az = compute.availability_zones.first
 
-    # find or create a nanobox security group
+    # find or create a microbox security group
     security = ::EC2::Security.new(manager)
     group = security.group
 

@@ -21,7 +21,7 @@ before do
   if ENV['FORCE_HTTPS']
     redirect request.url.sub('http', 'https') unless request.secure?
   end
-  
+
   content_type 'application/json'
   request.body.rewind
   request_body = request.body.read
@@ -30,8 +30,8 @@ end
 
 get '/' do
   content_type 'text/html'
-  'AWS API Adapter for Nanobox. ' \
-  'source: https://github.com/nanobox-io/nanobox-adapter-aws'
+  'AWS API Adapter for Microbox. ' \
+  'source: https://github.com/mu-box/microbox-adapter-aws'
 end
 
 get '/meta' do
@@ -109,7 +109,7 @@ def client
   key_id     = request.env['HTTP_AUTH_ACCESS_KEY_ID']
   access_key = request.env['HTTP_AUTH_SECRET_ACCESS_KEY']
   region     = request.env['HTTP_REGION_ID'] || ::EC2::DEFAULT_REGION
-  
+
   ::EC2::Client.new(key_id, access_key, region)
 end
 
